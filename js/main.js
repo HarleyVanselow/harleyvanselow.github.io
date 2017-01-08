@@ -20,8 +20,8 @@ var categories = [
         resources: [
             {image:"resources/nait.png",alt:"nait",descriptiveText:"I evaluated material for NAIT!"},
             {image:"resources/room.jpg",alt:"theroom",descriptiveText:"I did some webdev for 'the room'!"},
-            {image:"resources/ge.gif",alt:"ge",descriptiveText:"I worked at GE Digital!"},
-            {image:"resources/questionmark.svg",alt:"tbd",descriptiveText:"I want to work in the future!"}
+            {image:"resources/ge.gif",alt:"ge",descriptiveText:"I worked at GE Digital! I did lots and lots and lots of cool stuff, such as programming. I worked with Ravil and Archie and Chad and Bo and Ryan and James, and we wrote code, the best code. We wrote such great code, believe me, it was tremendous."},
+            {image:"resources/questionmark.png",alt:"tbd",descriptiveText:"I want to work in the future!"}
         ]},
     {title: "About Me",
         headerData: placeholder}

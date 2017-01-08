@@ -16,15 +16,19 @@ and open the template in the editor.
     margin-top:100px;
     max-width: 80vw;
 }
+.mdl-card__actions{
+    font-size:40px;
+}
 .contact-card-content{
     display:table-cell;
-    width:78%;
+    width:78vw;
     min-height:0%;
     padding-top: 0;
 }
 
 .card-title{
-    width: 20vw;
+    min-width: 20vw;
+    vertical-align:bottom;
     padding-left:1%;
     padding-right:1%;
     display: table-cell;

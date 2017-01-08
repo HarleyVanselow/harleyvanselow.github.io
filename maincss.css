@@ -1,0 +1,74 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2-Jan-2017, 3:59:21 PM
+    Author     : Harley Vanselow
+*/
+
+.pageContent{
+    height:2000px;
+}
+.full-card{
+    margin:0 auto;
+    margin-top:100px;
+    max-width: 80vw;
+}
+.contact-card-content{
+    display:table-cell;
+    width:78%;
+    min-height:0%;
+    padding-top: 0;
+}
+
+.card-title{
+    width: 20vw;
+    padding-left:1%;
+    padding-right:1%;
+    display: table-cell;
+    min-height: 0%;
+}
+
+.iconSelectorContainer{
+    width:100%;
+}
+
+.icon{
+    height:100%;
+    width:100%;
+}
+.iconContainer{
+    height: 210px;
+    width: 100%;
+}
+
+.selectorContainer{
+    clear:both;
+    height:10px;
+    width:100%;
+    margin-top:5px;
+}
+
+.selector{
+    position:relative;
+    width: 16%;
+    margin-left:2%;
+    margin-right:2%;
+    height: 100%;
+    float:left;
+    visibility:hidden;
+}
+.imageWrapper{
+    width: 16%;
+    margin-left:2%;
+    margin-right:2%;
+    height: 100%;
+    float:left;
+}
+.active-selector{
+    visibility:visible;
+}
+
+

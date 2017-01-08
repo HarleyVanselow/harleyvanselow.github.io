@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <div id='basicCardBody'>
+        <section class="full-card mdl-shadow--4dp" id="{{Id}}">
+            <div class="card-title mdl-color--primary">
+                <h1>{{Title}}</h1>
+            </div>
+            <div class = "contact-card-content mdl-card">
+                <div class ="mdl-card__title">
+                    {{{SupportingText}}}
+                </div>
+                <div class="mdl-card__actions">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="navLinkHtml">
+        <a class ="mdl-navigation__link" id="{{navId}}" href="{{cardId}}">{{topic}}</a>
+    </div>
+    <script id="imageResource">
+        <div class="imageWrapper">
+        <image class="icon" src="{{image}}" alt="{{imageAlt}}" id="{{imageId}}">
+        </div>
+    </script>
+    <div id="imageResourceWrapper">
+        <div class="iconSelectorContainer">
+            <div class="iconContainer">
+                {{{iconHtml}}}
+            </div>
+            <div class="selectorContainer">
+                {{{selectorHtml}}}
+            </div>
+        </div>
+    </div>
+</html>

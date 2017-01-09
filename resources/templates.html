@@ -10,18 +10,17 @@ and open the template in the editor.
             <div class="card-title mdl-color--primary">
                 <h1>{{Title}}</h1>
             </div>
-            <div class = "contact-card-content mdl-card">
+            <div class = "card-content mdl-card">
                 <div class ="mdl-card__title">
-                    {{{SupportingText}}}
+                    {{{SupportingContent}}}
                 </div>
-                <div class="mdl-card__actions">
-                </div>
+                    {{{ResourceDescription}}}
             </div>
         </section>
     </div>
 
     <div id="navLinkHtml">
-        <a class ="mdl-navigation__link" id="{{navId}}" href="{{cardId}}">{{topic}}</a>
+        <a class ="mdl-navigation__link navLinkText" id="{{navId}}" href="{{cardId}}">{{topic}}</a>
     </div>
     <script id="imageResource">
         <div class="imageWrapper">

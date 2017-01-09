@@ -6,25 +6,42 @@
 
 var categories = [
     {title: "Contact Info",
-        headerData: placeholder},
+        headerData: writeMainContent,
+        mainContent:"<ul class='descriptiveText'>\n\
+        <li>Email: vanselow@ualberta.ca</li>\n\
+        <li>Linkedin: <a href='https://ca.linkedin.com/in/harley-vanselow-2a3296124'>Harley Vanselow</a></li>\n\
+        <li>Github: <a href='https://github.com/HarleyVanselow'>harleyvanselow</a></li>\n\
+        </ul>"
+    },
     {title: "Skill Summary",
         headerData: drawIcons,
         resources: [
-            {image: "resources/java.svg", alt: "java", descriptiveText: "I do java gud"},
-            {image: "resources/webwork.png", alt: "web", descriptiveText: "I do webwork gud!!"},
-            {image: "resources/Android_robot.png", alt: "android", descriptiveText: "I do android gud"},
-            {image: "resources/python.png", alt: "python", descriptiveText: "I do python gud"},
-            {image: "resources/sql.png", alt: "sql", descriptiveText: "I do sql gud"}]},
+            {image: "resources/java.svg", alt: "java", descriptiveText: "I am proficient in Java and OO design, and have experience in writing RESTful API's that integrate with Tomcat servers. In my most recent job as Java developer for GE Digital, I was given the opportunity to lead eductional seminars on some of the nuances of Java, including details on Java 8's functional programming tools, and implementing polymorphic behavior"},
+            {image: "resources/webwork.png", alt: "web", descriptiveText: "I have experience writing HTML, CSS, and Javascript, and am familiar with the jQuery library and bootstrap framework. I am also skilled at working with RESTful API via AJAX requests, and have basic PHP experience.<br>Some examples of web development I have done can be found <a href='https://github.com/HarleyVanselow/harleyvanselow.github.io'>here</a> and <a href='http://tinyurl.com/hvwebwork'>here</a>"},
+            {image: "resources/Android_robot.png", alt: "android", descriptiveText: "I have independantly and collaboratively worked on Android applications, and am familiar with their planning, testing, and coding.<br> An app I personally wrote can be found <a href='https://github.com/HarleyVanselow/AndroidReminderApp'>here </a>. <br>An app I collaborated on can be found <a href='https://github.com/CMPUT301F16T12/CloudyCar'>here</a>"},
+            {image: "resources/c-logo.png", alt: "C", descriptiveText: "I am productive in C, and am familiar with essentials, such as pointer usage, manual memory management, and basic networking using sockets.<br> Examples of C projects I have worked on can be found <a href='https://github.com/HarleyVanselow/ClientServer'>here</a> and <a href='https://github.com/HarleyVanselow/WorkingSetSimulator'>here</a>"},
+            {image: "resources/sql.png", alt: "sql", descriptiveText: "I am familiar with MySQL and MSSQL, and am knowledgable in the use of stored procedures, triggers, transactions, and basic relational design."}]},
     {title: "Work Experience",
         headerData: drawIcons,
         resources: [
-            {image:"resources/nait.png",alt:"nait",descriptiveText:"I evaluated material for NAIT!"},
-            {image:"resources/room.jpg",alt:"theroom",descriptiveText:"I did some webdev for 'the room'!"},
-            {image:"resources/ge.gif",alt:"ge",descriptiveText:"I worked at GE Digital! I did lots and lots and lots of cool stuff, such as programming. I worked with Ravil and Archie and Chad and Bo and Ryan and James, and we wrote code, the best code. We wrote such great code, believe me, it was tremendous."},
-            {image:"resources/questionmark.png",alt:"tbd",descriptiveText:"I want to work in the future!"}
+            {image:"resources/nait.png",alt:"nait",descriptiveText:"NAIT- Computer Engineering Technology Department, Summer 2015<ul class='descriptiveTextList'>\n\
+                                                                    <li>Evaluated ICAs (in class assignments) and labs for Computer Engineering Technologies courses on Object Oriented Programming, Database Technologies, Web Technology, and Web Application Development</li>\n\
+                                                                    <li>Provided feedback on exercise appropriateness, content, depth, and continuity</li>\n\
+                                                                    <li>Edited assignments for terminology, clarity, and conciseness</li></ul>"},
+            {image:"resources/room.jpg",alt:"theroom",descriptiveText:"the room, Summer 2015<ul class='descriptiveTextList'>\n\
+                                                                        <li>Developed an easy to maintain custom FAQ field for a website</li>\n\
+                                                                        <li>Quickly responded to changing employer requests</li>\n\
+                                                                        <li>Implemented requested additions seamlessly into existing framework</li></ul>"},
+            {image:"resources/ge.gif",alt:"ge",descriptiveText:"GE Digital, January-August 2016<ul class='descriptiveTextList'>\n\
+                                                                <li>Worked collaboratively in a scaled Agile framework with other professional developers and directly contributed to the international release of GE Digital’s Web HMI 1.0 product</li>\n\
+                                                                <li>Produced maintainable, extensible, and thoroughly tested Java code that integrated cleanly with 3rd party services and communicated asynchronously using RESTful API’s</li>\n\
+                                                                <li>Took initiative to coordinate and plan the merging of code from multiple developers</li>\n\
+                                                                <li>Created content for and ran seminars on Java language nuances</li></ul>"},
+            {image:"resources/questionmark.png",alt:"tbd",descriptiveText:"I am currently seeking an placement for my upcoming 8 month co-op work term, starting in May 2017! <br>I am interested in any and all types of programming work, as long as it's challenging, and I'm provided the opportunity to meaningfully contribute."}
         ]},
     {title: "About Me",
-        headerData: placeholder}
+        headerData: writeMainContent,
+        mainContent:"<span class='descriptiveText'>I'm a fourth year computer engineering student at the University of Alberta. In my free time I enjoy playing jazz piano, gaming, off-trial hiking (in the summer), and making impossibly obscure movie and tv references</span>"}
 ];
 var templates;
 $(document).ready(function () {
@@ -36,7 +53,9 @@ function buildPage() {
     buildAllCards();
 }
 function placeholder() {}
-
+function writeMainContent(){
+    return this.mainContent;
+}
 function drawIcons() {
     var selectorBarHtml = "";
     var imageHtml = "";
@@ -78,9 +97,14 @@ function buildAllCards() {
 
 function buildCard(category) {
     var template = $(templates).filter("#basicCardBody").html();
+    var resourceDescription="";
+    if(category.hasOwnProperty("resources")){
+        resourceDescription = "<div class='descriptiveText'></div>";
+    }
     var data = {
         Title: category.title,
-        SupportingText: category.headerData(),
+        SupportingContent: category.headerData(),
+        ResourceDescription:resourceDescription,
         Id: genCardId(category.title)
     };
     var output = Mustache.render(template, data);
@@ -89,7 +113,7 @@ function buildCard(category) {
     if (category.hasOwnProperty("resources")) {
         category.resources.forEach(function (resource) {
             $("#" + resource.alt).click(function () {
-                $("#" + genCardId(category.title)).find(".mdl-card__actions").first().html(resource.descriptiveText);
+                $("#" + genCardId(category.title)).find(".descriptiveText").first().html(resource.descriptiveText);
                 var newSelector = $("#" + genSelectorId(resource.alt));
                 var prevSelector = $(this).parent().parent().parent().find('.active-selector').first();
                 if(newSelector.attr('id') === prevSelector.attr('id')){return;}

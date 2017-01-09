@@ -9,21 +9,35 @@ and open the template in the editor.
 */
 
 .pageContent{
-    height:2000px;
+    height:2400px;
 }
 .full-card{
     margin:0 auto;
     margin-top:100px;
     max-width: 80vw;
 }
-.mdl-card__actions{
-    font-size:40px;
+.descriptiveText{
+    font-size:30px;
+    line-height:34px;
+    padding-left:30px;
+    padding-right:30px;
 }
-.contact-card-content{
+.descriptiveTextList{
+    font-size:30px;
+    line-height:34px;
+    margin-bottom: 0;
+}
+
+.mdl-navigation__link,.mdl-layout-title{
+    font-size:30px;
+}
+
+.card-content{
     display:table-cell;
     width:78vw;
     min-height:0%;
-    padding-top: 0;
+    padding-top: 20px;
+    padding-bottom:20px;
 }
 
 .card-title{
@@ -54,20 +68,23 @@ and open the template in the editor.
     width:100%;
     margin-top:5px;
 }
-
+.mdl-layout__header-row{
+    padding-left: 10px;
+    padding-right:10px;
+}
 .selector{
     position:relative;
-    width: 16%;
-    margin-left:2%;
-    margin-right:2%;
+    width: 18%;
+    margin-left:1%;
+    margin-right:1%;
     height: 100%;
     float:left;
     visibility:hidden;
 }
 .imageWrapper{
-    width: 16%;
-    margin-left:2%;
-    margin-right:2%;
+    width: 18%;
+    margin-left:1%;
+    margin-right:1%;
     height: 100%;
     float:left;
 }

@@ -2,7 +2,7 @@
 .ripple-wrapper {
 	display: block;
 	position: absolute;
-	background: rgb(64,196,255);
+	background: #D75833;
 	border-radius: 100%;
 	-webkit-transform: scale(0);
 	-ms-transform: scale(0);

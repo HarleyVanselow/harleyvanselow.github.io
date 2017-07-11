@@ -1,0 +1,23 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10-Jan-2017, 7:12:01 PM
+    Author     : Harley Vanselow
+*/
+
+.mdl-color--primary{
+    background-color:#F9CA4E!important;
+}
+.pageContent{
+    background-color:#c5c1c0 !important;
+}
+
+.mdl-layout__header, .mdl-color--accent{
+    background-color:#D75833 !important;
+}
+a{
+    color:#D75833 !important;
+}

@@ -16,30 +16,29 @@ var categories = [
     {title: "Skill Summary",
         headerData: drawIcons,
         resources: [
-            {image: "resources/java.svg", alt: "java", descriptiveText: "I am proficient in Java and OO design, and have experience in writing RESTful API's that integrate with Tomcat servers. In my most recent job as Java developer for GE Digital, I was given the opportunity to lead educational seminars on some of the nuances of Java, including details on Java 8's functional programming tools, and implementing polymorphic behavior."},
+            {image: "resources/java.svg", alt: "java", descriptiveText: "I am proficient in Java and OO design, and have experience in writing RESTful API's that integrate with Tomcat servers. <br>In my past position as a Java developer for GE Digital, I was given the opportunity to lead educational seminars on some of the nuances of Java, including details on Java 8's functional programming tools, and implementing polymorphic behavior. <br>With IBM, I served as the lead architect and developer of a Java based automation framework. As part of this work, I created sophisticated JSON structures for communication with the framework, and an accompanying interface library to abstract away the necessary REST calls for developer implementation."},
             {image: "resources/webwork.png", alt: "web", descriptiveText: "I have experience writing HTML, CSS, and Javascript, and am familiar with jQuery and Bootstrap. I am also skilled at working with RESTful API via AJAX requests, and have basic PHP experience.<br>Some examples of web development I have done can be found <a href='https://github.com/HarleyVanselow/harleyvanselow.github.io'>here</a> and <a href='http://tinyurl.com/hvwebwork'>here</a>."},
             {image: "resources/Android_robot.png", alt: "android", descriptiveText: "I have independently and collaboratively worked on Android applications, and am familiar with their planning, testing, and coding.<br> An app I personally wrote can be found <a href='https://github.com/HarleyVanselow/AndroidReminderApp'>here</a>. <br>An app I collaborated on can be found <a href='https://github.com/CMPUT301F16T12/CloudyCar'>here</a>."},
             {image: "resources/c-logo.png", alt: "C", descriptiveText: "I am productive in C, and am familiar with essentials, such as pointer usage, manual memory management, and basic networking using sockets.<br> Examples of C projects I have worked on can be found <a href='https://github.com/HarleyVanselow/ClientServer'>here</a> and <a href='https://github.com/HarleyVanselow/WorkingSetSimulator'>here</a>."},
-            {image: "resources/sql.png", alt: "sql", descriptiveText: "I am familiar with MySQL and MSSQL, and am knowledgable in the use of stored procedures, triggers, transactions, and basic relational design."}]},
+            {image: "resources/sql.png", alt: "sql", descriptiveText: "I am familiar with MySQL and MSSQL, and am knowledgeable in the use of stored procedures, triggers, transactions, and basic relational design."}]},
     {title: "Work Experience",
         headerData: drawIcons,
         resources: [
-            {image:"resources/nait.png",alt:"nait",descriptiveText:"NAIT- Computer Engineering Technology Department, Summer 2015<ul class='descriptiveTextList'>\n\
-                                                                    <li>Evaluated ICAs (in class assignments) and labs for Computer Engineering Technology courses on Object Oriented Programming, Database Technologies, Web Technologies, and Web Application Development</li>\n\
-                                                                    <li>Provided feedback on exercise appropriateness, content, depth, and continuity</li>\n\
-                                                                    <li>Edited assignments for terminology, clarity, and conciseness</li></ul>"},
-            {image:"resources/room.jpg",alt:"theroom",descriptiveText:"'the room' (escape room), Summer 2015<ul class='descriptiveTextList'>\n\
-                                                                        <li>Developed an easy to maintain custom FAQ field for a website</li>\n\
-                                                                        <li>Quickly responded to changing employer requests</li>\n\
-                                                                        <li>Implemented requested additions seamlessly into existing framework</li></ul>"},
-            {image:"resources/ge.gif",alt:"ge",descriptiveText:"GE Digital, January-August 2016<ul class='descriptiveTextList'>\n\
+			{image:"resources/ge.gif",alt:"ge",descriptiveText:"GE Digital, January-August 2016<ul class='descriptiveTextList'>\n\
                                                                 <li>Worked collaboratively in a scaled Agile framework with other professional developers and directly contributed to the international release of GE Digital’s Web HMI 1.0 product</li>\n\
                                                                 <li>Produced maintainable, extensible, and thoroughly tested Java code that integrated cleanly with 3rd party services and communicated asynchronously using RESTful API’s</li>\n\
                                                                 <li>Took initiative to coordinate and plan the merging of code from multiple developers</li>\n\
                                                                 <li>Created content for and ran seminars on Java language nuances</li></ul>"},
 
-            {image:"resources/ibm.png",alt:"tbd",descriptiveText:"I am currently working for IBM as a software development intern! Have joined IBM in April 2017, I will be working in the Markham lab developing quality code until December 2017, at which point I will be returning to university to complete my degree"}
-        ]},
+            {image:"resources/ibm.png",alt:"ibm",descriptiveText:"IBM, May-December 2017<ul class='descriptiveTextList'>\n\
+																<li>Collaborated and guided the design, architecture and development of an automation tooling framework to used department wide with all current and future tooling projects, greatly expediting deployment and performance testing</li>\n\
+																<li>Took on a leadership role in my team, assuming the responsibility to prioritize, delegate and monitor work progress across all team members</li>\n\
+																<li>Spearheaded deployment and maintenance of a team artifact repository, first using Archiva before migrating to Sonatype Nexus 3</li>\n\
+																<li>Worked across the stack, helping interface our framework with a MongoDB instance, a Nodejs/Vue frontend, and Java clients</li></ul>"},
+
+			{image:"resources/questionmark.png",alt:"seeking",descriptiveText:"I am currently seeking a full time development position pending my graduation in April 2018! <br>I am interested in any and all types of programming work, as long as it's challenging, and I'm provided the opportunity to meaningfully contribute."}
+		]											
+	},
 
 
     {title: "About Me",

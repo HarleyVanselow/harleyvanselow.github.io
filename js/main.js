@@ -36,7 +36,8 @@ var categories = [
 																<li>Spearheaded deployment and maintenance of a team artifact repository, first using Archiva before migrating to Sonatype Nexus 3</li>\n\
 																<li>Worked across the stack, helping interface our framework with a MongoDB instance, a Nodejs/Vue frontend, and Java clients</li></ul>"},
 
-			{image:"resources/questionmark.png",alt:"seeking",descriptiveText:"I am currently seeking a full time development position pending my graduation in April 2018! <br>I am interested in any and all types of programming work, as long as it's challenging, and I'm provided the opportunity to meaningfully contribute."}
+            {image:"resources/cppib.png",alt:"cpp-ib",descriptiveText:"CPP Investment Board, September 2018<ul class='descriptiveTextList'>\n\
+                                                                        <li>Currently working as a backend developer on the Big Data & Cloud team</li></ul>"}
 		]											
 	},
 
